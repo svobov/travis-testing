@@ -14,7 +14,6 @@ jobs:
         - sed -i "s/nahradit/$test2/g" file.txt
         - cat file.txt
         - echo "nene"
-      if: NOT type = "pull_request"
     - stage: all
       script:
         - echo "$test"
